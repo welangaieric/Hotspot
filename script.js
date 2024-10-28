@@ -63,9 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getPackageDescription(packageName) {
         const descriptions = {
-            basic: 'Our Basic Package includes 5GB data, 100 minutes, and 100 SMS per month.',
-            standard: 'The Standard Package offers 20GB data, unlimited minutes, and unlimited SMS.',
-            premium: 'Our Premium Package provides 50GB data, unlimited minutes, unlimited SMS, and free international roaming.'
+            basic: 'Our Basic Package includes 5GB data, 100 minutes, and 100 SMS per month. Price: $10/month. Duration: 1 month. Devices: 1',
+            standard: 'The Standard Package offers 20GB data, unlimited minutes, and unlimited SMS. Price: $20/month. Duration: 1 month. Devices: 3',
+            premium: 'Our Premium Package provides 50GB data, unlimited minutes, unlimited SMS, and free international roaming. Price: $30/month. Duration: 1 month. Devices: 5'
         };
         return descriptions[packageName] || 'Package description not available.';
     }
