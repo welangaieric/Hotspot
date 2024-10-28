@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Green Telecom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Green Telecom</div>
+            <button id="selfcareBtn" class="btn">Self Care</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Green Telecom</h1>
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder="Enter code" required>
+                    <label for="username">Username</label>
+                    <i class="icon">👤</i>
+                </div>
+                <button id="submitBtn" class="btn btn-submit">Submit</button>
+            </div>
+        </section>
+
+        <section class="packages">
+            <h2>Our Packages</h2>
+            <div class="package-list">
+                <div class="package" data-package="basic">
+                    <h3>Basic Package</h3>
+                    <p>Perfect for light users</p>
+                </div>
+                <div class="package" data-package="standard">
+                    <h3>Standard Package</h3>
+                    <p>Great for everyday use</p>
+                </div>
+                <div class="package" data-package="premium">
+                    <h3>Premium Package</h3>
+                    <p>For power users and families</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="packageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="packageTitle"></h2>
+            <p id="packageDescription"></p>
+            <div class="input-group">
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <label for="phone">Phone Number</label>
+            </div>
+            <button id="modalSubmit" class="btn btn-submit">Submit</button>
+        </div>
+    </div>
+
+    <div id="selfcareModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Self Care</h2>
+            <section class="recent-transactions">
+                <h3>Recent Transactions</h3>
+                <ul id="transactionList"></ul>
+            </section>
+            <section class="recent-vouchers">
+                <h3>Recent Vouchers</h3>
+                <ul id="voucherList"></ul>
+            </section>
+            <section class="reward-eligibility">
+                <h3>Reward Eligibility</h3>
+                <p id="rewardStatus"></p>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
