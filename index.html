@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Green Telecom</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,37 +16,49 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
                 <h1>Welcome to Green Telecom</h1>
                 <div class="input-group">
-                    <input type="text" id="username" name="username" placeholder="Enter code" required>
-                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="username">Enter Code</label>
                     <i class="icon">👤</i>
                 </div>
                 <button id="submitBtn" class="btn btn-submit">Submit</button>
             </div>
         </section>
 
+        <!-- Packages Section -->
         <section class="packages">
             <h2>Our Packages</h2>
             <div class="package-list">
                 <div class="package" data-package="basic">
                     <h3>Basic Package</h3>
                     <p>Perfect for light users</p>
+                    <p>Price: $10/month</p>
+                    <p>Duration: 1 month</p>
+                    <p>Devices: 1</p>
                 </div>
                 <div class="package" data-package="standard">
                     <h3>Standard Package</h3>
                     <p>Great for everyday use</p>
+                    <p>Price: $20/month</p>
+                    <p>Duration: 1 month</p>
+                    <p>Devices: 3</p>
                 </div>
                 <div class="package" data-package="premium">
                     <h3>Premium Package</h3>
                     <p>For power users and families</p>
+                    <p>Price: $30/month</p>
+                    <p>Duration: 1 month</p>
+                    <p>Devices: 5</p>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Modals and Scripts -->
     <div id="packageModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -79,6 +91,6 @@
         </div>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
