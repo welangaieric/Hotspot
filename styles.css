@@ -1,3 +1,4 @@
+/* Colors and Global Styles */
 :root {
   --primary-color: #2ecc71;
   --secondary-color: #27ae60;
@@ -72,6 +73,7 @@ nav {
   left: 100%;
 }
 
+/* Hero Section */
 .hero {
   height: 50vh;
   display: flex;
@@ -93,6 +95,7 @@ nav {
   font-size: 2.5rem;
 }
 
+/* Input Group with Floating Label */
 .input-group {
   position: relative;
   margin: 2rem 0;
@@ -138,6 +141,7 @@ nav {
   transform: translateY(-50%);
 }
 
+/* Packages Section */
 .packages {
   padding: 4rem 2rem;
 }
@@ -175,6 +179,7 @@ nav {
   margin-bottom: 0.5rem;
 }
 
+/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
@@ -238,6 +243,7 @@ nav {
   border-radius: 5px;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
